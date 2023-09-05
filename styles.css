@@ -126,6 +126,61 @@ nav {
 .button-image{
     float: right;
 }
-.about{
-    background:none;
+
+.explore p{
+    font-size: 90px;   
 }
+.card-container{
+    position: absolute;
+    font-family: "fira-mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+  /* Style for the explore page container 
+  .page#explore {
+    padding: 20px;
+  }
+
+  /* Style for the property listings container 
+  .property-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  /* Style for each property item 
+  .property-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Style for property images 
+  .property-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Style for property titles 
+  .property-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+

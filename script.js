@@ -1,6 +1,3 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-
 const apiKey = 'effd046944mshab918ceb096ff70p104d4cjsnd580b285ad6c';
 const apiUrl = 'https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4';
 const app = {
@@ -53,11 +50,6 @@ const app = {
     }
   },
 };
-
-hamburgerMenu.addEventListener('click', function () {
-  // Toggle the 'active' class to show/hide the mobile menu
-  hamburgerMenu.classList.toggle('active');
-});
 document.addEventListener('DOMContentLoaded', app.init);
 
 /*const apiKey = 'effd046944mshab918ceb096ff70p104d4cjsnd580b285ad6c';

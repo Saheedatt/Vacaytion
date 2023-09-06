@@ -125,13 +125,13 @@ nav {
     display: block; 
 }
 /*ABOUT SECTION*/
-.about, .explore, .faq, .contact{
+.about, .faq, .contact{
     justify-content: center;
     align-items: center;
     top: 40%;
     left: 30%;
 }
-.about , .explore, .faq, .contact p{
+.about , .faq, .contact p{
     color: #fff;
     font-size: 100px;
 } 

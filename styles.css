@@ -197,20 +197,5 @@ footer p{
 .property h3 {
     font-size: 15px;
 }
-/*
-/**PAGES
-.page{
-    display: none;
-    width: 100%;
-    min-height: 100%;
-    position: fixed;
-    padding: 1rem 2rem;
-}
-  <section class="products">
-      <!-- title -->
-      <div class="title">
-        <h2>our products</h2>
-        <div class="title-underline"></div>
-      </div>
-      <!-- products -->
-      <div class="products-center"></div>
+
+        

@@ -161,6 +161,42 @@ footer p{
     color: #fff;
     margin-left: 20px;
 }
+.properties {
+    padding: 10px;
+}
+.property-center { 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.property-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.price {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+.property{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.property img{
+    max-width: 100%;
+    height: auto;
+}
+.property h3 {
+    font-size: 15px;
+}
 /*
 /**PAGES
 .page{
@@ -170,6 +206,11 @@ footer p{
     position: fixed;
     padding: 1rem 2rem;
 }
-.active{
-    display: block; 
-}
+  <section class="products">
+      <!-- title -->
+      <div class="title">
+        <h2>our products</h2>
+        <div class="title-underline"></div>
+      </div>
+      <!-- products -->
+      <div class="products-center"></div>

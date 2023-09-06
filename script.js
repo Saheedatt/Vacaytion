@@ -27,6 +27,7 @@ const displayProperties = (properties) => {
       const imageUrl = property.coverPhoto ? property.coverPhoto.url : '';
       return `
         <div class="property">
+        <a class="single-property" href="houses.html?id=123&name=jane&age=25">
           <img src="${imageUrl}" alt="${property.title}" width="300" class= "image" height="200">
           <h3>${property.title}</h3>
           <p>ID: ${property.id}</p>
@@ -34,6 +35,7 @@ const displayProperties = (properties) => {
           <p class="price">Rooms: ${property.rooms}</p>
           <p class="price">Baths: ${property.baths}</p>
           <p class="price">Location: ${property.area}</p>
+          </a>
         </div>
       `;
     })

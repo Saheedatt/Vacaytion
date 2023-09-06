@@ -197,5 +197,8 @@ footer p{
 .property h3 {
     font-size: 15px;
 }
-
+.single-property{
+    margin-bottom: 0;
+    color: grey;
+}
         

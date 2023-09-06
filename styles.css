@@ -7,7 +7,7 @@ main{
     background-size: cover;
     background-position: center center;
     height: 100vh;
-
+    background-image: url('images/home5.jpg');
 }
 header{
     color: #f5deb3;
@@ -31,7 +31,7 @@ nav {
 .navbar-links a {
     text-decoration: none;
     color: #fff3ff;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .navbar-links a:first-child {
     margin-left: 0;
@@ -113,7 +113,56 @@ nav {
 .button-image{
     float: right;
 }
-/**PAGES*/
+
+/*Explore Page*/
+.explore-section{
+    background: silver;
+}
+.mini-description{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    background-color: #ffffff;
+}
+
+.box {
+    width: 30%; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+.services h1{
+    text-align: center;
+}
+footer{
+    background-color: #000;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 30px;
+}
+li{
+    list-style: none;
+    padding-top: 10px;
+    color: #999;
+    opacity: 0.7;
+} 
+.column {
+    flex: 1;
+    padding: 10px;
+}
+footer p{
+    color: #fff;
+    margin-left: 20px;
+}
+/*
+/**PAGES
 .page{
     display: none;
     width: 100%;
@@ -124,14 +173,3 @@ nav {
 .active{
     display: block; 
 }
-/*ABOUT SECTION*/
-.about, .faq, .contact{
-    justify-content: center;
-    align-items: center;
-    top: 40%;
-    left: 30%;
-}
-.about , .faq, .contact p{
-    color: #fff;
-    font-size: 100px;
-} 

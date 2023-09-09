@@ -17,8 +17,7 @@
 }
 
 body{
-    background: var(--mainBackground);
-    overflow-x: hidden;
+    background: var(--mainBackground);    
 }
 
 a {
@@ -101,11 +100,11 @@ aside {
   width: 100vw;
   transition: all, 0.3s linear;
   transform: translate(100%);
-  /* display: none; */
+  display: none;
 }
 
 .show-sidebar {
-  /* display: block; */
+  display: block;
   transform: translate(0%);
 }
 

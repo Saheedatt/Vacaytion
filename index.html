@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,58 +6,67 @@
     <title>Vacaytion</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/nuj1xce.css">
+    <script src="https://kit.fontawesome.com/6a2abf25a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <div class="header-container">
-            <header>
-                <nav>
-                    <a class="logo" href="#home" data-target="home" class="nav-link">Vacaytion</a>
-                    <div class="navbar-links">
-                        <a href="#home" data-target="home" class="nav-link">Home</a>
-                        <a href="#about" data-target="about" class="nav-link">About</a>
-                        <a href="#explore" data-target="explore" class="nav-link">Explore</a>
-                        <a href="#contact" data-target="contact" class="nav-link">Contact</a>
-                        <button class="sign-up">Sign Up</button>
-    
-                        <div class="hamburger-menu"></div>
-                    </div>
-                </nav>
-            </header>
-            <div class="page active" id="home">
-                <div class="description-text">
-                    <h2>Find a place to stay without any difficulties.
-                    </h2>
-                    <p>Love your temporary home.</p>
-                    <p style="color: bisque;"> Your comfort is our top priority.</p>
-                </div> 
-                <div class="button-container">
-                    <p class="button-header">Ready to find your dream home? Start exploring now!</p>
-                    <div class="buttons">
-                        <button class="list">
-                            <span class="button-text">Explore</span>
-                            <img src="images/right-arrow.png" width="12px" class="button-image">
-                        </button>
-                        <button class="list">
-                            <span class="button-text">List your property</span>
-                            <img src="images/right-arrow.png" width="12px" class="button-image">
-                        </button>
-                </div>
-                </div>
-    </main>
-    <section class="explore-section" id="explore">
+    <header>
+        <nav>
+                        <a class="logo" href="#home" data-target="home" class="nav-link">Vacaytion</a>
+                        <ul class="navbar-links">
+                            <li><a href="#home" data-target="home" class="nav-link">Home</a></li>
+                            <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+                            <li><a href="#explore" data-target="explore" class="nav-link">Explore</a></li>
+                            <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+                        </ul>
+                         <button class="sign-up">Sign Up</button>
+                            <button class="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <aside>
+                        <button class="close-sidebar"><i class="fa-solid fa-xmark"></i></button>
+                        <ul class="aside-links">
+                            <li><a href="#home" data-target="home" class="nav-link">Home</a></li>
+                                <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+                                <li><a href="#explore" data-target="explore" class="nav-link">Explore</a></li>
+                                <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+                                <li><button class="sign-up">Sign Up</button></li>
+                                <li class="social-links">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-github"></i></li>
+                        </ul>   
+        </aside>
+    </header>
+    <main> 
+       <section class="heading">
+            <div class="description-text">
+                        <h2>Love your temporary home</h2>
+                        <p>Your comfort is our top priority...</p>
+            </div> 
+            <div class="button-container">
+                        <!-- <p class="button-header">Ready to find your dream home? Start exploring now!</p> -->
+                        <div class="buttons">
+                            <button class="list">
+                                <span class="button-text">Explore</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <button class="list">
+                                <span class="button-text">List your property</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+            </div>
+       </section>
+        <section class="explore-section" id="explore">
         <div class="mini-description">
         <h2>Explore our available apartments</h2>
         <p>Searching for a temporary home throughout your stay here
             in Dubai can be quite stressful. That is why you need us.
         </p>
         </div>
-        <div class="properties">
-            <div class="property-center"></div>
-        </div>
-        <button class="load" type="button">Load More</button>
-    </section>
-    <section class="about" id="about">
+        <div class="property-center"></div>
+        </section>
+        <section class="about" id="about">
         <div class="description">
             <h1>About Us</h1>
             <p>A highly proficient team of real estate experts in Dubai established Vacaytion
@@ -135,35 +145,36 @@
                     </div>
                 </div>
         </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <div class="columns">
-        <div class="column">
+            <div class="column">
             <h4>Company</h4>
             <ul>
                 <li href="#about">About</li>
                 <li>Careers</li>
                 <li>Blog</li>
             </ul>
-          </div>
-          <div class="column">
+            </div>
+            <div class="column">
             <h4>Support</h4>
             <ul>
                 <li>FAQ</li>
                 <li>Chat</li>
                 <li>Terms</li>
             </ul>
-          </div>
-          <div class="column">
+            </div>
+            <div class="column">
             <h4>Services</h4>
             <ul>
                 <li>Pricing</li>
                 <li>Agencies</li>
                 <li>Landlords</li>
             </ul>
-          </div>
-          </div>
-          <p>© 2023 Vacaytion...</p>
+            </div>
+        </div>
+            <p>© 2023 Vacaytion...</p>
     </footer>
 </body>
 <script src="script.js"></script>

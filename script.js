@@ -1,5 +1,5 @@
 const url =
-  "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=5&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
+  "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
 
 const propertyDOM = document.querySelector(".property-center");
 
@@ -27,7 +27,9 @@ const displayProperties = (properties) => {
     .map((property) => {
       const imageUrl = property.coverPhoto ? property.coverPhoto.url : "";
       return `
+        <div class ="property-modal">
         <div class="property" id=${property.id}>
+          <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
           <img src="${imageUrl}" alt="${property.title}" class="property-image">
           <h3>${property.title}</h3>
           <div class="details">
@@ -36,12 +38,25 @@ const displayProperties = (properties) => {
           <p class="rooms">Rooms: <span>${property.rooms}</span></p>
           <p class="baths">Baths: <span>${property.baths}</span></p>
           <p class="location">Location: <span>${property.area}</span></p>
-          <p class="description">Description: <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae commodi, omnis optio sapiente mollitia dolores, magni minima ratione, qui quisquam. Exercitationem quam, nisi nemo voluptates voluptate in aut culpa enim mollitia dolor sequi ducimus excepturi maxime ipsam sapiente porro fugiat, quis necessitatibus? Commodi temporibus quia voluptatibus ad repudiandae nihil ut in. Culpa fugit nesciunt enim dolor cum voluptate veniam ipsum accusantium tempora! Perspiciatis voluptatibus cupiditate ullam, accusantium atque ad."</span></p>
+          <p class=description">Description: <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae commodi, omnis optio sapiente mollitia dolores, magni minima ratione, qui quisquam.</span></p>
           </div>
+        </div>
         </div>`;
     })
     .join("");
   propertyDOM.innerHTML = `<div class="property-container">${propertyList}</div>`;
+
+  const propertiesModal = propertyDOM.querySelectorAll(".property-modal");
+  propertiesModal.forEach((property) => {
+    let closeBtn = property.querySelector(".close-modal");
+    property.addEventListener("mousedown", (e) => {
+      if (closeBtn.contains(e.target)) {
+        property.classList.remove("active");
+      } else {
+        property.classList.add("active");
+      }
+    });
+  });
 };
 const start = async () => {
   const data = await fetchData();

@@ -259,8 +259,8 @@ aside .social-links i:active {
     grid-template-columns: 1fr;
 }
 
-.property-center *{
-    /* border: 2px solid; */
+.property-modal .close-modal{
+    display: none;
 }
 
 .property {
@@ -296,29 +296,94 @@ aside .social-links i:active {
 }
 
 .active{
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: 0;
-    background: rgba(118, 116, 102, 0.595);
-    height: 100vh;
-    width: 100vw;
-    z-index: 1000;
-    border: 2px solid green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 30, 30, 0.448);
+    display: grid;
+    place-items: center;
 }
 
-.active img{
-    width: 80%;
-    aspect-ratio: 1;
+.active .property{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px dashed black; */
+    padding: 1rem 0;
+    /* padding-top: 3rem; */
+    border-radius: 2.2em;
+    background: aliceblue;
+    cursor:unset;
+    max-width: 80%;
 }
 
 .active h3{
     display: none;
 }
 
+.active .close-modal{
+    display: block;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 400;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: rgb(181, 109, 38);
+    transform: translate(10%, -10%);
+    border-radius: 50%;
+}
+
+.active .close-modal:active{
+    background: rgb(246, 168, 90);
+}
+
+.active .close-modal i{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.active .property img{
+  width: 90%;
+  object-fit: cover;
+  /* aspect-ratio: 1; */
+  height: 50%;
+  aspect-ratio:16/9;
+  border-radius: 1.5em;
+  filter: brightness(100%)
+}
+
 .active .details{
-   display: block;
+    display: block;
+    width: 90%;
+    border-radius: 1.5em;
+    box-shadow: 0 0 5px 0 rgb(130, 125, 125);
+    padding: 0.5rem;
+    background: white;
+}
+
+.active h2{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(134, 116, 16);
+}
+
+.active p{
+   font-size: 0.8rem;
+   font-weight: 800;
+   color: rgb(134, 116, 16);
+  font-family: var(--secondaryFontFamily);
+}
+
+.active p span{
+    font-weight: 300;
+    color: black;
+    font-family: var(--primaryFontFamily);
 }
 
 @media(min-width: 800px){
@@ -355,6 +420,42 @@ aside .social-links i:active {
 
     .property h3{
         font-size: 0.85rem;
+    }
+
+    .active .property{
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem;
+        gap: 1rem;
+        max-width: 60%;
+    }
+
+    .active .property img{
+        width: 60%;
+        aspect-ratio: 1;
+    }
+
+.active .close-modal{
+    height: 2.5rem;
+    width: 2.5rem;
+    transform: translate(20%, -20%);
+}
+
+    .active .close-modal i{
+        font-size: 1.2rem;
+    }
+
+    .active .property .details{
+        width: 40%;
+        padding: 2rem 0.5rem;
+    }
+
+    .active h2{
+        font-size: 1.3rem;
+    }
+
+    .active p{
+        font-size: 1rem;
     }
 }
 

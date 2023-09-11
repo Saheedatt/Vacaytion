@@ -1,4 +1,4 @@
-/*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ nav {
     float: right;
 }
 
-/*Explore Page
+/*Explore Page*/
 .explore-section{
     background: silver;
 }

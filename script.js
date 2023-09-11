@@ -1,4 +1,10 @@
+const url =
+  "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
 
+const propertyDOM = document.querySelector(".property-center");
+
+const fetchData = async () => {
+  propertyDOM.innerHTML = '<div class="loading"></div>';
 
   const options = {
     method: "GET",
@@ -40,6 +46,7 @@ const displayProperties = (properties) => {
     .join("");
   propertyDOM.innerHTML = `<div class="property-container">${propertyList}</div>`;
 
+  // MODAL FUNCTIONALITY
   const propertiesModal = propertyDOM.querySelectorAll(".property-modal");
   propertiesModal.forEach((property) => {
     let closeBtn = property.querySelector(".close-modal");
@@ -79,4 +86,3 @@ listElements.forEach((element) => {
     sidebar.classList.remove("show-sidebar");
   });
 });
-document.addEventListener('DOMContentLoaded', init);*/

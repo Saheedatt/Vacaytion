@@ -92,7 +92,7 @@ nav .sign-up {
 }
 
 aside {
-  position: absolute;
+  position: fixed;
   right: 0;
   background: rgb(225, 226, 210);
   height: 100vh;
@@ -424,6 +424,7 @@ aside .social-links i:active {
   .active .property {
     flex-direction: row;
     justify-content: center;
+    align-items: stretch;
     padding: 2rem;
     gap: 1rem;
     max-width: 60%;

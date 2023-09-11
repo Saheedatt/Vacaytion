@@ -46,6 +46,7 @@ const displayProperties = (properties) => {
     .join("");
   propertyDOM.innerHTML = `<div class="property-container">${propertyList}</div>`;
 
+  // MODAL FUNCTIONALITTY
   const propertiesModal = propertyDOM.querySelectorAll(".property-modal");
   propertiesModal.forEach((property) => {
     let closeBtn = property.querySelector(".close-modal");

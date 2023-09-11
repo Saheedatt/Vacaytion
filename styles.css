@@ -1,13 +1,7 @@
-*{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-main{
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    background-image: url('images/home5.jpg');
 }
 header{
     color: #f5deb3;
@@ -36,15 +30,7 @@ nav {
 .navbar-links a:first-child {
     margin-left: 0;
 }
-.sign-up{
-    background-color: transparent;
-    color: white;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 20px;
-}
+
 .description-text{
     font-family: "fira-mono", monospace;
     font-weight: 400;
@@ -114,7 +100,7 @@ nav {
     float: right;
 }
 
-/*Explore Page*/
+/*Explore Page
 .explore-section{
     background: silver;
 }

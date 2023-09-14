@@ -385,7 +385,16 @@ aside .social-links i:active {
   color: black;
   font-family: var(--primaryFontFamily);
 }
-
+footer{
+  background-image: url(images/grainy.jpg);
+  background-size: cover;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 30px;
+}
 @media (min-width: 800px) {
   nav ul {
     display: flex;
@@ -457,5 +466,101 @@ aside .social-links i:active {
 
   .active p {
     font-size: 1rem;
+  }
+  
+.description {
+  padding: 20px;
+}
+
+.description h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+.box {
+  background-color: #fff; 
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  width: 30%; 
+  margin-bottom: 20px; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.box h3 {
+  margin-bottom: 10px;
+}
+.box:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.services h1{
+  text-align: center;
+  margin-bottom: 20px; 
+}
+footer{
+  background-image: url(images/grainy.jpg);
+  background-size: cover;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 30px;
+}
+li{
+  list-style: none;
+  padding-top: 10px;
+  color: #999;
+  opacity: 0.7;
+} 
+.column {
+  flex: 1;
+  padding: 10px;
+}
+footer p{
+  color: #fff;
+  margin-left: 20px;
+}
+.column ul li {
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+.column ul li:hover {
+  transform: scale(1.1);
+}
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services h1{
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+  }
+  .box {
+    width: 100%; 
+    background-color: #fff; 
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+    padding-left: 30px;
+  }
+  .description {
+    padding: 20px;
+  }
+  
+  .description h1 {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

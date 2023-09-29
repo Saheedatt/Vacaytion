@@ -1,5 +1,6 @@
 const url =
-  "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
+'https://bayut-com1.p.rapidapi.com/properties/list?name=Abu%20Dhabi&purpose=for-rent&hitsPerPage=30&page=0&sort=city-level-score';
+  //"https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-rent&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
 
 const propertyDOM = document.querySelector(".property-center");
 
@@ -9,8 +10,10 @@ const fetchData = async () => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "effd046944mshab918ceb096ff70p104d4cjsnd580b285ad6c",
-      "X-RapidAPI-Host": "bayut.p.rapidapi.com",
+      'X-RapidAPI-Key': 'effd046944mshab918ceb096ff70p104d4cjsnd580b285ad6c',
+      'X-RapidAPI-Host': 'bayut-com1.p.rapidapi.com'
+     // "X-RapidAPI-Key": "effd046944mshab918ceb096ff70p104d4cjsnd580b285ad6c",
+      //"X-RapidAPI-Host": "bayut.p.rapidapi.com",
     },
   };
   try {

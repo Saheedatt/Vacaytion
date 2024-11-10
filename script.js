@@ -89,3 +89,22 @@ listElements.forEach((element) => {
     sidebar.classList.remove("show-sidebar");
   });
 });
+
+// FORM FUNCTIONALITY
+const listPropertyButton = document.querySelector('.buttons .list:nth-child(2)');
+const popupForm = document.getElementById('property-form');
+const closeFormButton = document.querySelector('.close-form');
+
+listPropertyButton.addEventListener('click', () => {
+    popupForm.style.display = 'flex';
+});
+
+closeFormButton.addEventListener('click', () => {
+    popupForm.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === popupForm) {
+        popupForm.style.display = 'none';
+    }
+});

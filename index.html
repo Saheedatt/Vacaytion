@@ -48,7 +48,7 @@
                         <!-- <p class="button-header">Ready to find your dream home? Start exploring now!</p> -->
                         <div class="buttons">
                             <button class="list">
-                                <span class="button-text">Explore</span>
+                                <span class="button-text"><a href="#explore" data-target="explore" class="nav-link">Explore</a></span>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </button>
                             <button class="list">
@@ -60,9 +60,9 @@
        </section>
         <section class="explore-section" id="explore">
         <div class="mini-description">
-        <h2>Explore our available apartments</h2>
-        <p>Searching for a temporary home throughout your stay here
-            in Dubai can be quite stressful. That is why you need us.
+        <h2>Discover Our Exclusive Apartments</h2>
+        <p>Finding a temporary home during your stay in Dubai can be challenging. Let us handle the details so you can focus on enjoying the experience. 
+            Explore our range of exceptional properties today!
         </p>
         </div>
         <div class="property-center"></div>
@@ -70,59 +70,40 @@
         <section class="about" id="about">
         <div class="description">
             <h1>About Us</h1>
-            <p>A highly proficient team of real estate experts in Dubai established Vacaytion
-                specializing in a wide spectrum of real estate services.
-                With a collective experience spanning more than a decade and an in-depth understanding
-                of the Dubai real estate market, along with extensive negotiation expertise, Vacaytion 
-                is your ultimate choice for representing your interests in all real estate dealings. 
-                Our well-coordinated team is committed to delivering top-notch service, leveraging our 
-                comprehensive knowledge of each unique locality and tailoring our services to meet the 
-                specific needs of our diverse clientele. Our primary focus centers on enhancing the customer
-                experience throughout their property journey. We take pride in our ability to cater to individual
-                requirements and go the extra mile to assist numerous clients in achieving their property ownership 
-                objectives, facilitating business setups, and maximizing returns on investments.
+            <p>Vacaytion was founded by a dedicated team of real estate professionals with a deep understanding of Dubai's property market. With over a decade of experience, our team has the knowledge and negotiation expertise to deliver top-tier real estate services 
+                tailored to the unique needs of our clients. From first-time home buyers to seasoned investors, we prioritize customer satisfaction, 
+                ensuring a smooth and memorable property journey. Our commitment is to help clients achieve their real estate goals, 
+                maximize their investments, and establish a fulfilling presence in Dubai.
             </p>
             <div class="services">
                 <h1>Services we provide</h1>
                 <div class="container">
                     <div class="box">
                         <h3>Airport Shuttle Service</h3>
-                        <p>Vacaytion ensures that our guests feel like VIPs by offering a whimsical airport 
-                            shuttle service. We greet them with a smile and whisk them away to their temporary home, 
-                            relieving the stress of travel
+                        <p>We make arrivals seamless with our welcoming airport shuttle service. Enjoy a stress-free start as we whisk you to your temporary home with a warm smile
                         </p>
                     </div>
                     <div class="box">
                         <h3>Personalized Concierge Assistance</h3>
-                        <p> We create a magical experience by offering personalized concierge services. Our guests 
-                            can rely on our friendly staff for recommendations on the best attractions, dining spots, 
-                            and activities in Dubai.
+                        <p>  Our concierge team is here to elevate your stay. From tailored recommendations to insider tips on Dubai's top attractions, we're dedicated to creating a one-of-a-kind experience.
                         </p>
                     </div>
                     <div class="box">
                         <h3>Daily Housekeeping and Turndown Service</h3>
-                        <p>We keep the fairy tale alive by providing daily housekeeping and turndown services. 
-                            Guests can return to a spotless and cozy home every evening.
+                        <p>We keep the fairy tale alive by providing daily housekeeping and turndown services. Guests can return to a spotless and cozy home every evening.
                         </p>
                     </div>
                     <div class="box">
                         <h3>Guided City Tours</h3>
-                        <p>We offer enchanting guided city tours that take guests on a magical journey 
-                            through Dubai's iconic landmarks. We have knowledgeable guides that will sprinkle 
-                            interesting stories and facts along the way.</p>
+                        <p>Discover Dubai's magic with our guided city tours, featuring exclusive insights and fascinating stories about iconic landmarks from our knowledgeable guides.</p>
                     </div>
                     <div class="box">
                         <h3>Welcome Gift Basket</h3>
-                        <p>We told you. Your comfort is our priority. Also, who doesn't like gifts?
-                            Our guests get a delightful welcome gift basket filled with local treats,
-                            maps, and a handwritten note. It's like a warm hug in the form of goodies!</p>
+                        <p>Your comfort is our priority, and we love to make our guests feel special. Our welcome basket includes local treats, maps, and a handwritten note, making you feel at home from day one</p>
                     </div>
                     <div class="box">
                         <h3>Themed Room Decorations</h3>
-                        <p>Your rooms will be decorated to your test. It will feel like home.
-                           You can choose the type of decorations you want.Whether it's a romantic getaway
-                            or a family adventure, we will customize the décor to suit the occasion, 
-                            creating lasting memories.</p>
+                        <p>Make your stay even more memorable with themed room décor customized to your occasion, whether it's a romantic getaway or a family vacation, designed just for you.</p>
                     </div>
                 </div>
                 <div class="why">
@@ -131,21 +112,42 @@
                         <div class="box">
                             <h2>213+</h2>
                             <p>Satisfied Customers</p>
-                            <span>blah blah blah blah</span>
+                            <span>Our clients trust us with their stay and often return, highlighting our commitment to quality and satisfaction.</span>
                         </div>
                         <div class="box">
                             <h2>350</h2>
                             <p>Spectacular properties available</p>
-                            <span>blah blah blah blah</span>
+                            <span>We offer an exclusive selection of high-end properties, ensuring every client finds the perfect place to stay.</span>
                         </div>
                         <div class="box">
                             <h2>17</h2>
                             <p>Partner companies</p>
-                            <span>dddkjdch dsvsd dojfdshfds dfsho</span>
+                            <span>Our partnerships with trusted providers enhance our services, allowing us to deliver the best possible experience.</span>
                         </div>
                     </div>
                 </div>
         </div>
+        </section>
+        <section class="popup-form" id="property-form">
+            <div class="form-container">
+                <button class="close-form"><i class="fa-solid fa-xmark"></i></button>
+                <h2>List Your Property</h2>
+                <form id="list-property-form">
+                    <label for="propertyName">Property Name</label>
+                    <input type="text" id="propertyName" name="propertyName" required>
+        
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+        
+                    <label for="price">Price</label>
+                    <input type="number" id="price" name="price" required>
+        
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+        
+                    <button type="submit" class="submit-btn">List your property!</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
